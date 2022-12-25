@@ -1,0 +1,178 @@
+@font-face {
+  font-family: "Inter";
+  src: url(./fonts/Inter-Bold.ttf) format("truetype");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Inter";
+  src: url(./fonts/Inter-Light.ttf) format("truetype");
+  font-weight: 300;
+}
+@font-face {
+  font-family: "Inter";
+  src: url(./fonts/Inter-Medium.ttf) format("truetype");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Inter";
+  src: url(./fonts/Inter-Regular.ttf) format("truetype");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Inter";
+  src: url(./fonts/Inter-SemiBold.ttf) format("truetype");
+  font-weight: 600;
+}
+@font-face {
+  font-family: "PlayfairDisplay";
+  src: url(./fonts/PlayfairDisplay-Bold.ttf) format("truetype");
+  font-weight: 700;
+}
+.previev, header nav, header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Inter";
+  font-style: normal;
+}
+
+body {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+header {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px 0;
+}
+header nav {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+header nav p {
+  margin-right: 35px;
+  font: 400 16px "Inter";
+  color: #b8becd;
+}
+header nav p:hover {
+  font: 400 16px "Inter";
+  color: #202336;
+}
+header nav div:not(:last-child) {
+  margin-right: 18px;
+}
+header nav .login-btn {
+  width: 132px;
+  height: 44px;
+  border: 1px solid #fb8f1d;
+  border-radius: 8px;
+  color: #fb8f1d;
+  text-align: center;
+  padding-top: 10px;
+}
+header nav .register-btn {
+  width: 132px;
+  height: 44px;
+  background: #fb8f1d;
+  border-radius: 8px;
+  color: #fff;
+  text-align: center;
+  padding-top: 10px;
+}
+header .img-logo {
+  background-image: url(./assets/logo.svg);
+  width: 41px;
+  height: 41px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.previev {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 100px;
+}
+.previev .travel-form {
+  width: 500px;
+}
+.previev .travel-form h1 {
+  font: 700 64px "Playfair Display";
+  color: #202336;
+}
+.previev .travel-form p {
+  font: 600 22px "Inter";
+  color: #202336;
+  margin: 50px 0;
+}
+.previev .travel-form .input-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.previev .travel-form .input-form div {
+  margin-bottom: 30px;
+}
+.previev .travel-form .input-form div:not(:last-child) {
+  margin-right: 30px;
+}
+.previev .travel-form .input-form input {
+  width: 220px;
+  height: 52px;
+  border: 0.8px solid #b8becd;
+  border-radius: 6px;
+  padding-left: 20px;
+  outline: none;
+}
+.previev .travel-form .input-form input::-webkit-input-placeholder {
+  font: 400 15px "Inter";
+  color: #4a4c53;
+}
+.previev .travel-form .input-form input::-moz-placeholder {
+  font: 400 15px "Inter";
+  color: #4a4c53;
+}
+.previev .travel-form .input-form input:-ms-input-placeholder {
+  font: 400 15px "Inter";
+  color: #4a4c53;
+}
+.previev .travel-form .input-form input::-ms-input-placeholder {
+  font: 400 15px "Inter";
+  color: #4a4c53;
+}
+.previev .travel-form .input-form input::placeholder {
+  font: 400 15px "Inter";
+  color: #4a4c53;
+}
+.previev .travel-form .btn {
+  width: 180px;
+  height: 52px;
+  background-color: #fb8f1d;
+  color: #fff;
+  border-radius: 8px;
+  text-align: center;
+  padding-top: 15px;
+  font: 700 17px "Inter";
+}
+.previev .travel-img {
+  background-image: url(./assets/main-img.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 506px;
+  height: 483px;
+}
