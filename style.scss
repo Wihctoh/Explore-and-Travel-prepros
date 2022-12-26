@@ -29,16 +29,21 @@
   font-weight: 700;
 }
 
+// --------------variables--------------------------------------
+
 $white-color: #fff;
 $grey-color: #b8becd;
 $black-color: #202336;
 $orange: #fb8f1d;
 $dark-grey: #4a4c53;
 
+// --------------inheritance--------------------------------------
+
 %flex-spb {
   display: flex;
   justify-content: space-between;
 }
+// --------------landing--------------------------------------
 
 * {
   margin: 0;
@@ -175,5 +180,107 @@ header {
     background-size: contain;
     width: 506px;
     height: 483px;
+  }
+}
+
+// --------------travel--------------------------------------
+
+.travel {
+  @extend %flex-spb;
+  padding-top: 100px;
+
+  .img {
+    background-image: url(./assets/setion.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 659px;
+    height: 534px;
+  }
+
+  .travel-discr {
+    padding-right: 37px;
+    padding-left: 66px;
+    width: 45%;
+
+    h3 {
+      font: 700 36px "Playfair Display";
+      color: $black-color;
+      padding-top: 100px;
+    }
+
+    p {
+      font: 300 17px "Inter";
+      color: $grey-color;
+      padding-top: 20px;
+    }
+
+    .btn {
+      width: 164px;
+      height: 48px;
+      color: $white-color;
+      font: 600 16px "Inter";
+      background-color: $orange;
+      border-radius: 8px;
+      text-align: center;
+      padding-top: 14px;
+      margin-top: 40px;
+    }
+  }
+}
+
+// --------------footer--------------------------------------
+
+footer {
+  display: flex;
+  justify-content: center;
+  background-color: #f9f9fb;
+  margin-top: 192px;
+  padding: 90px 0 120px;
+  position: absolute;
+  width: 100%;
+  left: 0;
+
+  .footer-column1 {
+    padding-left: 52px;
+
+    .img {
+      background-image: url(./assets/footer-logo.svg);
+      background-repeat: no-repeat;
+      background-size: contain;
+      width: 44px;
+      height: 37px;
+    }
+
+    p {
+      font: 300 18px "Inter";
+      color: $grey-color;
+      width: 312px;
+
+      &:not(:last-child) {
+        padding-top: 21px;
+      }
+
+      &:last-child {
+        width: 375px;
+        padding-top: 34px;
+      }
+    }
+  }
+
+  .footer-column {
+    p {
+      font: 300 18px "Inter";
+      color: $grey-color;
+      padding-left: 100px;
+
+      &:not(:first-child) {
+        padding-top: 20px;
+      }
+
+      &:first-child {
+        font: 700 19px "Inter";
+        color: $black-color;
+      }
+    }
   }
 }

@@ -28,7 +28,7 @@
   src: url(./fonts/PlayfairDisplay-Bold.ttf) format("truetype");
   font-weight: 700;
 }
-.previev, header nav, header {
+.travel, .previev, header nav, header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -175,4 +175,90 @@ header .img-logo {
   background-size: contain;
   width: 506px;
   height: 483px;
+}
+
+.travel {
+  padding-top: 100px;
+}
+.travel .img {
+  background-image: url(./assets/setion.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 659px;
+  height: 534px;
+}
+.travel .travel-discr {
+  padding-right: 37px;
+  padding-left: 66px;
+  width: 45%;
+}
+.travel .travel-discr h3 {
+  font: 700 36px "Playfair Display";
+  color: #202336;
+  padding-top: 100px;
+}
+.travel .travel-discr p {
+  font: 300 17px "Inter";
+  color: #b8becd;
+  padding-top: 20px;
+}
+.travel .travel-discr .btn {
+  width: 164px;
+  height: 48px;
+  color: #fff;
+  font: 600 16px "Inter";
+  background-color: #fb8f1d;
+  border-radius: 8px;
+  text-align: center;
+  padding-top: 14px;
+  margin-top: 40px;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #f9f9fb;
+  margin-top: 192px;
+  padding: 90px 0 120px;
+  position: absolute;
+  width: 100%;
+  left: 0;
+}
+footer .footer-column1 {
+  padding-left: 52px;
+}
+footer .footer-column1 .img {
+  background-image: url(./assets/footer-logo.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 44px;
+  height: 37px;
+}
+footer .footer-column1 p {
+  font: 300 18px "Inter";
+  color: #b8becd;
+  width: 312px;
+}
+footer .footer-column1 p:not(:last-child) {
+  padding-top: 21px;
+}
+footer .footer-column1 p:last-child {
+  width: 375px;
+  padding-top: 34px;
+}
+footer .footer-column p {
+  font: 300 18px "Inter";
+  color: #b8becd;
+  padding-left: 100px;
+}
+footer .footer-column p:not(:first-child) {
+  padding-top: 20px;
+}
+footer .footer-column p:first-child {
+  font: 700 19px "Inter";
+  color: #202336;
 }
